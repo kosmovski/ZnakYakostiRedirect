@@ -12,9 +12,11 @@
 var strI = String(window.location).indexOf('?')+1; 
 var u=String(window.location).substring(strI);
 console.log(u);
-location=u;
- setTimeout(() => {  window.close(); }, 2000);
-// sleep(2000);
+openedWindow= window.open( u );
+//location=u;
+ sleep(2000);
+ openedWindow.close();
+//
 
 //file:///C:/Users/kosmo/OneDrive/Документи/1.html?https://www.google.com/
 </script>
