@@ -9,8 +9,8 @@
 //var strGET = window.location.search.replace( '?', ''); 
 
 //location=strGET; // "https://www.google.com/";
-var strI = window.location.indexOf('?'); 
-var u=window.location.substring(strI);
+var strI = String(window.location).indexOf('?'); 
+var u=String(window.location).substring(strI);
 console.log(u);
 location=u; // "https://www.google.com/";
 //file:///C:/Users/kosmo/OneDrive/Документи/1.html?https://www.google.com/
