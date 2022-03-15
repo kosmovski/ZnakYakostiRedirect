@@ -9,7 +9,7 @@
 //var strGET = window.location.search.replace( '?', ''); 
 
 //location=strGET; // "https://www.google.com/";
-var strI = str.indexOf(window.location,'?'); 
+var strI = window.location.indexOf('?'); 
 var u=window.location.substring(strI);
 console.log(u);
 location=u; // "https://www.google.com/";
