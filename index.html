@@ -6,9 +6,12 @@
 
  
 <script type="text/javascript">
-var strGET = window.location.search.replace( '?', ''); 
+//var strGET = window.location.search.replace( '?', ''); 
 
-location=strGET; // "https://www.google.com/";
+//location=strGET; // "https://www.google.com/";
+var strI = str.indexOf(window.location,'?'); 
+var u=window.location.substring(strI);
+location=u; // "https://www.google.com/";
 //file:///C:/Users/kosmo/OneDrive/Документи/1.html?https://www.google.com/
 </script>
 
